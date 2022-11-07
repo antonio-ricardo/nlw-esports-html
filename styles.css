@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+    margin-bottom: 32px;
+}
+
+header div {
+    border-radius: 50%;
+
+    display: flex;
+    padding: 4px;
+
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+
+    animation: fromTop 2s backwards 0.3s;
+    transition: transform .5s;
+}
+
+header div:hover {
+    transform: scale(1.1);
+} 
+
+header div img {
+    border-radius: 50%;
+    width: 100px;
+}
+
+body {
+    background-image: url(./assets/bg.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+/* main * {
+    border: 1px solid red;
+} */
+
+main {
+    max-width: 700px;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 60px;
+
+    display: grid;
+    gap: 24px;
+}
+
+section {
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 2.5px;
+
+    border-radius: 10px;
+}
+
+section div {
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+section h2 {
+    color: white;
+    letter-spacing: -0.47px;
+}
+
+section p {
+    color: #C1C1C1;
+    letter-spacing: -0.18px;
+}
+
+section ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 24px;
+}
+
+section ul li {
+    transition: transform .5s;
+}
+
+section ul li:hover {
+    transform: scale(1.1);
+}
+
+main section:nth-child(1) {
+    animation: fromBottom 1s backwards 0.1s;
+
+}
+
+main section:nth-child(2) {
+    animation: fromBottom 1s backwards 0.3s;
+
+}
+
+main section:nth-child(3) {
+    animation: fromBottom 1s backwards 0.5s;
+}
+
+.game-list img {
+    border-radius: 8px;
+}
+
+.channel-list img {
+    border-radius: 50%;
+    width: 70px;
+}
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-2rem);
+    }
+
+    to  {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translatex(-15rem);
+    }
+
+    to  {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
