@@ -19,12 +19,13 @@
     max-width: 50rem;
     width: 50%;
 
-    min-height: 25rem;
+    min-height: 27rem;
     max-height: 27rem;
     height: 50%;
 
     flex-direction: column;
     border-radius: 15px;
+    background-color: #2A2634;
 }
 
 #chaminha h2 {
@@ -49,10 +50,13 @@
 }
 
 .newGameInfoInput {
+    background-color: rgb(32, 32, 32);
     padding: 0.5rem;
+    color: white;
 }
 
 #newGameButton {
+    color: white;
     justify-content: center;
     gap: 15%;
 }
@@ -67,6 +71,8 @@
 .newGameInfoButton {
     padding: 1rem 4rem;
     border-radius: 15px;
+    background-color: #2A2634;
+    color: white;
 }
 
 #newGameButton div:hover {

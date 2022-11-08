@@ -10,7 +10,7 @@ async function addGame() {
 
   const data = {
     imageLink: gameInfo[0].value,
-    link: gameInfo[1].value,
+    gameLink: gameInfo[1].value,
     gameName: gameInfo[2].value
   }
 
