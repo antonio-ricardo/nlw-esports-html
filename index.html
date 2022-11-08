@@ -9,7 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NLW Esports</title>
 
+    <script src="./script.js"></script>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./modal.css">
 </head>
 <body>
     
@@ -19,38 +21,20 @@
             </div>
         </header>
 
-        <main>
-
+        <main id="main">
             <section>
 
                 <div>
-                    <h2>Meus jogos</h2>
-                    <p>Os games que eu mais curto jogar!</p>
+                    <div>
+                        <div class="games-title">
+                            <h2>Meus jogos</h2>
+                            <p>Os games que eu mais curto jogar!</p>
+                        </div>
+
+                        <button onclick="openModal()">adicionar novo jogo</button>
+                    </div>
 
                     <ul class="games-list">
-                        <li>
-                            <a 
-                            target="_blank"
-                            href="https://www.twitch.tv/directory/game/League%20of%20Legends">
-                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/21779-188x250.jpg" alt="Imagem do jogo league of legends">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a 
-                            target="_blank"
-                            href="https://www.twitch.tv/directory/game/VALORANT">
-                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/516575-188x250.jpg" alt="Imagem do jogo valorant">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a 
-                            target="_blank"
-                            href="https://www.twitch.tv/directory/game/Minecraft">
-                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/27471_IGDB-188x250.jpg" alt="imagem do jogo minecraft">
-                            </a>
-                        </li>
                     </ul>
 
                 </div>
@@ -142,5 +126,28 @@
             </section>
 
         </main>
+    
+        <div id="chama">
+            <div id="chaminha">
+                <h2>Adicionar novo jogo</h1>
+
+                <div id="newGameInfo">
+                    <input class="newGameInfoInput" type="text" name="" placeholder="link da imagem">
+                    <input class="newGameInfoInput" type="text" name="" placeholder="link do jogo">
+                    <input class="newGameInfoInput" type="text" name="" placeholder="nome do jogo">
+                </div>
+    
+                <div id="newGameButton">
+                    <div>
+                        <input id="newGameConfirmButton" class="newGameInfoButton" onclick="addGame()" type="button" value="confirmar">
+                    </div>
+
+                    <div>
+                        <input class="newGameInfoButton" type="button" onclick="closeModal()" id="newGameInfoConfirmCancel" value="cancelar">
+                    </div>
+                </div>
+
+            </div>
+        </div>
 </body>
 </html>

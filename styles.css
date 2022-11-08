@@ -25,7 +25,7 @@ header div {
 
 header div:hover {
     transform: scale(1.1);
-} 
+}
 
 header div img {
     border-radius: 50%;
@@ -44,10 +44,6 @@ body * {
     font-family: 'Inter', sans-serif;
     line-height: 160%;
 }
-
-/* main * {
-    border: 1px solid red;
-} */
 
 main {
     max-width: 700px;
@@ -81,6 +77,40 @@ section h2 {
 section p {
     color: #C1C1C1;
     letter-spacing: -0.18px;
+}
+
+section div button {
+    display: flex;
+}
+
+section div div {
+    justify-content: space-between;
+    display: flex;
+    padding: 0px;
+}
+
+section div div button {
+    align-items: center;
+    margin-right: 32px;
+    background-color: #2A2634;
+
+    border-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%) 30;
+
+    border-width: 4px;
+    border-style: solid;
+
+    padding: 0px 5px;
+
+    transition: 0.5s;
+}
+
+section div div button:hover {
+    transform: scale(1.1);
+}
+
+.games-title {
+    display: flex;
+    flex-direction: column;
 }
 
 section ul {
@@ -128,7 +158,7 @@ main section:nth-child(3) {
         transform: translateY(-2rem);
     }
 
-    to  {
+    to {
         opacity: 1;
         transform: translateY(0);
     }
@@ -140,7 +170,7 @@ main section:nth-child(3) {
         transform: translatex(-15rem);
     }
 
-    to  {
+    to {
         opacity: 1;
         transform: translateY(0);
     }
